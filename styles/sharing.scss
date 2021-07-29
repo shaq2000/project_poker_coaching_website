@@ -1,0 +1,63 @@
+@import "./components/header.scss";
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  section.left {
+    flex: 1 1 300px;
+    padding: 2rem;
+    h1 {
+      font-size: 2rem;
+      padding: 1rem;
+      color: red;
+    }
+    p {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+  section.right {
+    flex: 1 1 400px;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div.img-container {
+      border-radius: 5%;
+      width: 40vw;
+      height: 30vw;
+      img {
+        border-radius: 5%;
+        width: 40vw;
+        height: 30vw;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    section.right {
+      div.image-container {
+        overflow: hidden;
+        width: 60vh;
+        height: 60vh;
+        border-radius: 50%;
+        img {
+          width: 60vh;
+          height: 60vh;
+          border-radius: 50%;
+        }
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@import "./components/footer.scss";
