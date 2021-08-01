@@ -18,10 +18,14 @@ main {
     position: relative;
     top: 0;
     z-index: -1;
+    align-items: center;
     section.table {
       flex: 3 1 300px;
       padding: 1rem;
+
       table {
+        display: flex;
+        justify-content: center;
         border-collapse: collapse;
         tr {
           border-bottom: 2px solid black;
@@ -55,13 +59,13 @@ main {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   main {
     section.picture {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       div.image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
         width: 50vh;
         height: 50vh;
@@ -72,7 +76,7 @@ main {
           border-radius: 50%;
         }
         img:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
       }
     }

@@ -3,7 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Hahmlet", serif;
 }
 
 h1,
@@ -79,7 +79,7 @@ header nav ul li a {
   padding: 1rem;
 }
 
-header nav ul li a:hover {
+header nav ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -112,12 +112,13 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 main section.left {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 1 300px;
-          flex: 3 1 300px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 800px;
+          flex: 2 1 800px;
   padding: 2rem;
 }
 
@@ -134,8 +135,8 @@ main section.left p {
 
 main section.right {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 400px;
-          flex: 1 1 400px;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
   position: relative;
 }
 
@@ -153,7 +154,7 @@ main section.right div.container img:hover {
           transform: scale(1.1);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1300px) {
   main section.left h1 {
     font-size: 2rem;
     padding: 1rem;

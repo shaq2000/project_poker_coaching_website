@@ -12,8 +12,9 @@
 main {
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
   section.left {
-    flex: 3 1 300px;
+    flex: 2 1 800px;
     padding: 2rem;
     h1 {
       font-size: 2rem;
@@ -26,7 +27,7 @@ main {
     }
   }
   section.right {
-    flex: 1 1 400px;
+    flex: 1 1 600px;
     position: relative;
     div.container {
       img {
@@ -44,7 +45,7 @@ main {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1300px) {
   main {
     section.left {
       h1 {
