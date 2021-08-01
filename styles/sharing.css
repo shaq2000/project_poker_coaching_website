@@ -75,11 +75,11 @@ header nav ul li {
 header nav ul li a {
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
-  font-size: 1.35rem;
-  padding: 1rem;
+  font-size: 1.1rem;
+  padding: 0.75rem;
 }
 
-header nav ul li a:hover {
+header nav ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -154,8 +154,8 @@ main section.right div.img-container img {
 }
 
 main section.right div.img-container img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media screen and (max-width: 400px) {
@@ -171,8 +171,8 @@ main section.right div.img-container img:hover {
     border-radius: 50%;
   }
   main section.right div.image-container img:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
